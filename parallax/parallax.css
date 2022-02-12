@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url('Billy Ohio.ttf');
+    font-family: ohio;
+}
+
+@font-face {
+    font-family: 'Reforma-1969-Gris';
+    src: url('Reforma-1969-Gris.ttf.woff') format('woff'), url('Reforma-1969-Gris.ttf.svg#Reforma-1969-Gris') format('svg'), url('Reforma-1969-Gris.ttf.eot'), url('Reforma-1969-Gris.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma-1969-Negra';
+    src: url('Reforma-1969-Negra.ttf.woff') format('woff'), url('Reforma-1969-Negra.ttf.svg#Reforma-1969-Negra') format('svg'), url('Reforma-1969-Negra.ttf.eot'), url('Reforma-1969-Negra.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.parallax {
+    background-image: url('hero.jpg');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 span {
+    font-family: ohio;
+    line-height: .4;
+    color: #DDAB5D;
+    font-size: .8em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 div {
+    font-family: 'Reforma-1969-Negra';
+    font-size: 1em;
+    padding: 0%;
+    line-height: 83px;
+    word-spacing: -2px;
+}
+
+.parallax h1 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.parallax p {
+    font-family: 'Reforma-1969-Gris';
+    font-size: 22px;
+    line-height: 34px;
+    margin-top: 40px;
+}
+
+.text {
+    text-align: center;
+    font-size: 76px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

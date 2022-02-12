@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url('./Assets/fonts/Billy Ohio.ttf');
+    font-family: ohio;
+}
+
+@font-face {
+    font-family: 'Reforma-1969-Gris';
+    src: url('./Assets/fonts/Reforma-1969-Gris.ttf.woff') format('woff'),
+        url('Reforma-1969-Gris.ttf.svg#Reforma-1969-Gris') format('svg'),
+        url('Reforma-1969-Gris.ttf.eot'),
+        url('Reforma-1969-Gris.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma-1969-Negra';
+    src: url('./Assets/fonts/Reforma-1969-Negra.ttf.woff') format('woff'),
+        url('Reforma-1969-Negra.ttf.svg#Reforma-1969-Negra') format('svg'),
+        url('Reforma-1969-Negra.ttf.eot'),
+        url('Reforma-1969-Negra.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Necessary Docs and fonts  */
+
+html,
+body {
+    height: 100%;
+}
+
+.text h1 span {
+    font-family: ohio;
+    line-height: 0.4;
+    color: #ddab5d;
+    font-size: 0.8em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.text h1 div {
+    font-family: 'Reforma-1969-Negra';
+    font-size: 1em;
+    padding: 0%;
+    line-height: 83px;
+    word-spacing: -2px;
+    color: white;
+}
+
+.parallax h1 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.parallax p {
+    font-family: 'Reforma-1969-Gris';
+    font-size: 22px;
+    line-height: 34px;
+    margin-top: 40px;
+    color: white;
+}
+
+.parallax {
+    background-image: url('./Imgaes/hero.jpg');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    text-align: center;
+    font-size: 76px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* next page 2nd and 4th text areas */
+
+.container-flex {
+    width: 1140px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.text-2 {
+    width: 475px;
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+}
+
+.text-2 h1 span,
+.text-4 h1 span {
+    font-family: ohio;
+    line-height: 0.4;
+    color: #ddab5d;
+    font-size: 9rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.text-2 h1 div,
+.text-4 h1 div {
+    font-family: 'Reforma-1969-Negra';
+    font-size: 7rem;
+    padding: 0%;
+    line-height: 83px;
+    word-spacing: -2px;
+    color: #34394b;
+}
+
+.image-2 img {
+    width: 278px;
+    height: 490px;
+}
+
+.text-2 p,
+.text-4 p {
+    font-family: 'Reforma-1969-Gris';
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 30px;
+    color: #34394b;
+}
+
+.text-2 img,
+.text-4 img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.text-2 a,
+.text-4 a {
+    color: #ddab5d;
+    border-bottom: 2px solid #ddab5d;
+    padding: 9px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.text-2 a:hover,
+.text-2 a:focus,
+.text-4 a:hover,
+.text-4 a:focus {
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    color: #ddab5d;
+}
+
+.text-2 a img,
+.text-4 a img {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.text-2 a:hover img,
+.text-4 a:hover img {
+    display: inline;
+}
+
+.parallax-2 {
+    background-image: url('./Imgaes/tasteful-recipes.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+/* 4th additional text using css grid */
+
+.container-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 80px 0 150px;
+}
+
+.image-4 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.image-4 img {
+    float: left;
+    width: 278px;
+    height: 235px;
+    margin: 10px;
+}
+
+.text-4 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+/* 3rd text area goes here */
+
+.text-3 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50;
+    transform: translate(0%, -50%);
+}
+
+.text-3 span {
+    font-family: ohio;
+    line-height: 0.4;
+    color: #ddab5d;
+    font-size: 9rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.text-3 div {
+    font-family: 'Reforma-1969-Negra';
+    font-size: 7rem;
+    padding: 0%;
+    line-height: 83px;
+    word-spacing: -2px;
+    color: whitesmoke;
+}
+
+col-lg-6 {
+    margin-left: 40px;
+    padding: 50px;
+}
+
+/* end of page 1-4 */
+
+.parallax-3 {
+    background-image: url('./Imgaes/perfect-blend.jpg');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-5 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50;
+    transform: translate(0%, -50%);
+}
+
+.text-5 span {
+    font-family: ohio;
+    line-height: 0.4;
+    color: #ddab5d;
+    font-size: 9rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.text-5 div {
+    font-family: 'Reforma-1969-Negra';
+    font-size: 7rem;
+    padding: 0%;
+    line-height: 83px;
+    word-spacing: -2px;
+    color: whitesmoke;
+}
+
+/* end of last content */
+
+.last {
+    background-color: #141928;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.last-text {
+    width: 250px;
+    height: 250px;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.last-text h1 {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Reforma-1969-Negra';
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.last-text p {
+    font-family: 'Reforma-1969-Gris';
+    font-size: 20px;
+    text-align: center;
+}
+
+.closing {
+    display: flex;
+    flex-direction: column;
+}
+
+.closing a {
+    text-decoration: none;
+    border-bottom: 2px solid #ddab5d;
+    color: white;
+    margin: auto;
+    transition: all 0.3s;
+}
+
+.closing a:hover {
+    color: #ddab5d;
+    text-decoration: none;
+}
+
+/* copyright */
+
+.copyright {
+    text-align: center;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #212b49;
+    color: white;
+}
+
+.copyright h1 {
+    font-family: 'Reforma-1969-Negra';
+    font-size: 30px;
+}
